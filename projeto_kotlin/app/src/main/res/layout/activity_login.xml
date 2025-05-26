@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FB8660"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="128dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/logo_circo_app"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/bia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:inputType="text"
+        android:text="Beatriz Bramont Oliveira"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo" />
+
+    <EditText
+        android:id="@+id/gi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:inputType="text"
+        android:text="Giovanna Petrilli Venditti"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bia" />
+
+    <EditText
+        android:id="@+id/isa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:inputType="text"
+        android:text="Isadora Cristyne de Lima Silva"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gi" />
+
+    <EditText
+        android:id="@+id/vini"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:inputType="text"
+        android:text="Vinicios de Lima Basteiro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/isa" />
+
+    <TextView
+        android:id="@+id/biaRA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="12dp"
+        android:background="#80FFFFFF"
+        android:text="RA: 2402004"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@id/bia"
+        app:layout_constraintTop_toTopOf="@id/bia" /> <!-- Semitransparente para sobrepor visivelmente -->
+    <TextView
+        android:id="@+id/giRA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="12dp"
+        android:background="#80FFFFFF"
+        android:text="RA: 2401830"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@id/gi"
+        app:layout_constraintTop_toTopOf="@id/gi" />
+
+    <TextView
+        android:id="@+id/isaRA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="12dp"
+        android:background="#80FFFFFF"
+        android:text="RA: 2401838"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@id/isa"
+        app:layout_constraintTop_toTopOf="@id/isa" />
+
+    <TextView
+        android:id="@+id/viniRA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="12dp"
+        android:background="#80FFFFFF"
+        android:text="RA: 2402096"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="@id/vini"
+        app:layout_constraintTop_toTopOf="@id/vini" />
+
+    <TextView
+        android:id="@+id/obg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Obrigado!"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@drawable/bg_textview_rounded"
+        android:padding="12dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/vini"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
