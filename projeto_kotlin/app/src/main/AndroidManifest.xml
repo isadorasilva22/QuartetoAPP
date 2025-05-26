@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Declara que este é o arquivo de manifesto do aplicativo Android -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.impacta.quartetoelegante"> <!-- Define o nome do pacote do aplicativo
+    package="com.isadorasilva.quartetoelegante"> <!-- Define o nome do pacote do aplicativo
     Esse identificador deve ser único e usado na Playstore e no código fonte-->
     <application
         android:allowBackup="true"
