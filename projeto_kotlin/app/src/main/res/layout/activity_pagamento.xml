@@ -1,45 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:background="#FB8660"
+    android:padding="24dp">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="279dp"
+        android:layout_height="123dp"
+        app:srcCompat="@drawable/tenda_de_circo"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="516dp" />
 
     <ScrollView
-        android:id="@+id/scrollView"
-        android:layout_width="385dp"
-        android:layout_height="433dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.62">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
         <LinearLayout
-            android:id="@+id/layoutPrincipal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
             android:orientation="vertical"
+            android:gravity="center_horizontal"
             android:paddingBottom="32dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="16dp"
                 android:text="Forma de Pagamento"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
-            <!-- Opções de pagamento -->
             <RadioGroup
                 android:id="@+id/rg_forma_pagamento"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
                 android:orientation="vertical">
 
                 <RadioButton
@@ -61,13 +64,13 @@
                     android:text="Boleto Bancário" />
             </RadioGroup>
 
-            <!-- Layout Cartão -->
+            <!-- Cartão -->
             <LinearLayout
                 android:id="@+id/layout_cartao"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
                 android:orientation="vertical"
+                android:layout_marginTop="16dp"
                 android:visibility="gone">
 
                 <EditText
@@ -75,14 +78,20 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Nome no cartão"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    android:background="@drawable/edittext_background"
+                    android:drawableStart="@drawable/ic_person"
+                    android:padding="12dp" />
 
                 <EditText
                     android:id="@+id/et_numero_cartao"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Número do cartão"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    android:background="@drawable/edittext_background"
+                    android:drawableStart="@drawable/ic_credit_card"
+                    android:padding="12dp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -94,7 +103,9 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:hint="Validade (MM/AA)" />
+                        android:hint="Validade (MM/AA)"
+                        android:background="@drawable/edittext_background"
+                        android:padding="12dp" />
 
                     <Space
                         android:layout_width="16dp"
@@ -106,18 +117,19 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:hint="CVV"
-                        android:inputType="numberPassword" />
+                        android:inputType="numberPassword"
+                        android:background="@drawable/edittext_background"
+                        android:padding="12dp" />
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- Layout Pix -->
+            <!-- Pix -->
             <LinearLayout
                 android:id="@+id/layout_pix"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="16dp"
                 android:orientation="vertical"
+                android:layout_marginTop="16dp"
                 android:visibility="gone">
 
                 <TextView
@@ -131,17 +143,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="Copiar Chave Pix" />
+                    android:text="Copiar Chave Pix"
+                    android:backgroundTint="#F44336"
+                    android:textColor="#FFFFFF" />
             </LinearLayout>
 
-            <!-- Layout Boleto -->
+            <!-- Boleto -->
             <LinearLayout
                 android:id="@+id/layout_boleto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="16dp"
                 android:orientation="vertical"
+                android:layout_marginTop="16dp"
                 android:visibility="gone">
 
                 <TextView
@@ -151,12 +164,25 @@
                     android:textSize="16sp" />
             </LinearLayout>
 
+            <!-- Botão confirmar -->
             <Button
                 android:id="@+id/btn_confirmar_pagamento"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="24dp"
-                android:text="Confirmar Pagamento" />
+                android:text="Confirmar Pagamento"
+                android:backgroundTint="#F44336"
+                android:textColor="#FFFFFF"
+                android:padding="12dp" />
         </LinearLayout>
     </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="279dp"
+        android:layout_height="123dp"
+        app:srcCompat="@drawable/circus"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="47dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
