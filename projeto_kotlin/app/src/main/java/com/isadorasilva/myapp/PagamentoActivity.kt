@@ -1,4 +1,4 @@
-package com.seupacote.app
+package com.isadorasilva.quartetoelegante
 
 import android.os.Bundle
 import android.view.View
