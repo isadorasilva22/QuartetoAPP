@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.seuusuario.myapp'
+    namespace 'com.isadorasilva.myapp'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.seuusuario.myapp"
+        applicationId "com.isadorasilva.myapp"
         minSdk 21
         targetSdk 34
         versionCode 1
