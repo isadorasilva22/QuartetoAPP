@@ -12,10 +12,9 @@ class LoginActivity : AppCompatActivity() {
 
         val loginButton = findViewById<Button>(R.id.login_button)
         loginButton.setOnClickListener {
-            // Aqui você pode verificar login antes, se quiser
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
-            finish() // opcional: fecha a tela de login
+            finish() //
         }
     }
 }
