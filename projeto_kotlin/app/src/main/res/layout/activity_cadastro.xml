@@ -17,7 +17,9 @@
             android:layout_width="128dp"
             android:layout_height="175dp"
             android:layout_marginTop="30dp"
-            android:src="@drawable/logo_circo_app" />
+            android:layout_marginLeft="120dp"
+            android:src="@drawable/macaco_foca_urso" />
+
 
         <TextView
             android:id="@+id/tvTitle"
