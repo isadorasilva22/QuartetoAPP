@@ -1,188 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#FB8660"
-    android:padding="24dp">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="279dp"
-        android:layout_height="123dp"
-        app:srcCompat="@drawable/tenda_de_circo"
-        tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="516dp" />
-
-    <ScrollView
-        android:layout_width="0dp"
+    <com.google.android.material.button.MaterialButtonToggleGroup
+        android:id="@+id/toggle_group_pagamento"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        app:singleSelection="true">
 
-        <LinearLayout
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_cartao"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center_horizontal"
-            android:paddingBottom="32dp">
+            android:layout_marginTop="8dp"
+            android:icon="@drawable/ic_credit_card"
+            app:iconGravity="textStart"
+            app:iconPadding="8dp"
+            app:iconTint="@null"
+            android:text="Cartão"
+            android:textSize="16sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:text="Forma de Pagamento"
-                android:textSize="24sp"
-                android:textStyle="bold" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_pix"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:icon="@drawable/ic_pix"
+            app:iconGravity="textStart"
+            app:iconPadding="8dp"
+            app:iconTint="@null"
+            android:text="Pix"
+            android:textSize="16sp" />
 
-            <RadioGroup
-                android:id="@+id/rg_forma_pagamento"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_boleto"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:icon="@drawable/ic_boleto"
+            app:iconGravity="textStart"
+            app:iconPadding="8dp"
+            app:iconTint="@null"
+            android:text="Boleto"
+            android:textSize="16sp" />
 
-                <RadioButton
-                    android:id="@+id/rb_cartao"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Cartão de Crédito" />
+    </com.google.android.material.button.MaterialButtonToggleGroup>
 
-                <RadioButton
-                    android:id="@+id/rb_pix"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Pix" />
-
-                <RadioButton
-                    android:id="@+id/rb_boleto"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Boleto Bancário" />
-            </RadioGroup>
-
-            <!-- Cartão -->
-            <LinearLayout
-                android:id="@+id/layout_cartao"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="16dp"
-                android:visibility="gone">
-
-                <EditText
-                    android:id="@+id/et_nome"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Nome no cartão"
-                    android:inputType="textPersonName"
-                    android:background="@drawable/edittext_background"
-                    android:drawableStart="@drawable/ic_person"
-                    android:padding="12dp" />
-
-                <EditText
-                    android:id="@+id/et_numero_cartao"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Número do cartão"
-                    android:inputType="number"
-                    android:background="@drawable/edittext_background"
-                    android:drawableStart="@drawable/ic_credit_card"
-                    android:padding="12dp" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-
-                    <EditText
-                        android:id="@+id/et_validade"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:hint="Validade (MM/AA)"
-                        android:background="@drawable/edittext_background"
-                        android:padding="12dp" />
-
-                    <Space
-                        android:layout_width="16dp"
-                        android:layout_height="wrap_content" />
-
-                    <EditText
-                        android:id="@+id/et_cvv"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:hint="CVV"
-                        android:inputType="numberPassword"
-                        android:background="@drawable/edittext_background"
-                        android:padding="12dp" />
-                </LinearLayout>
-            </LinearLayout>
-
-            <!-- Pix -->
-            <LinearLayout
-                android:id="@+id/layout_pix"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="16dp"
-                android:visibility="gone">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Chave Pix: pagamentos@exemplo.com"
-                    android:textSize="16sp" />
-
-                <Button
-                    android:id="@+id/btn_copiar_pix"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="Copiar Chave Pix"
-                    android:backgroundTint="#F44336"
-                    android:textColor="#FFFFFF" />
-            </LinearLayout>
-
-            <!-- Boleto -->
-            <LinearLayout
-                android:id="@+id/layout_boleto"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="16dp"
-                android:visibility="gone">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="O boleto será gerado após a confirmação."
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-            <!-- Botão confirmar -->
-            <Button
-                android:id="@+id/btn_confirmar_pagamento"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
-                android:text="Confirmar Pagamento"
-                android:backgroundTint="#F44336"
-                android:textColor="#FFFFFF"
-                android:padding="12dp" />
-        </LinearLayout>
-    </ScrollView>
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="279dp"
-        android:layout_height="123dp"
-        app:srcCompat="@drawable/circus"
-        tools:layout_editor_absoluteX="47dp"
-        tools:layout_editor_absoluteY="47dp" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
