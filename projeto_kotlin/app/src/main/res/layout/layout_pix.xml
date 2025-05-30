@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FB8660"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="128dp"
+            android:layout_height="175dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/macaco_foca_urso" />
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="Código PIX para pagamento"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Código PIX (somente leitura) -->
+        <TextView
+            android:id="@+id/tvPixCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background"
+            android:padding="16dp"
+            android:text="00020126580014BR.GOV.BCB.PIX0114+55119999999990214Compra XYZ520400005303986540510005802BR5913Nome do Recebedor6009Sao Paulo62070503***63041D3D"
+            android:textSize="14sp" />
+
+        <!-- Botão Copiar Código -->
+        <Button
+            android:id="@+id/btn_copy_pix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_textview_rounded"
+            android:gravity="center"
+            android:text="COPIAR CÓDIGO PIX"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+        <!-- Botão Confirmar -->
+        <Button
+            android:id="@+id/btn_confirmar_pagamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_textview_rounded"
+            android:gravity="center"
+            android:text="CONFIRMAR PAGAMENTO"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</ScrollView>
