@@ -1,59 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:gravity="center_horizontal"
+    android:background="#F47C57"
+    android:padding="24dp">
 
-    <com.google.android.material.button.MaterialButtonToggleGroup
-        android:id="@+id/toggle_group_pagamento"
+    <!-- Ícone do malabarista -->
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/circus"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forma de Pagamento"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Botões de formas de pagamento -->
+    <Button
+        android:id="@+id/btn_cartao"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:orientation="vertical"
-        app:singleSelection="true">
+        android:text="Cartão de Crédito"
+        android:background="@drawable/outlined_button"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="12dp" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_cartao"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:icon="@drawable/ic_credit_card"
-            app:iconGravity="textStart"
-            app:iconPadding="8dp"
-            app:iconTint="@null"
-            android:text="Cartão"
-            android:textSize="16sp" />
+    <Button
+        android:id="@+id/btn_pix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pix"
+        android:background="@drawable/outlined_button"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="12dp" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_pix"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:icon="@drawable/ic_pix"
-            app:iconGravity="textStart"
-            app:iconPadding="8dp"
-            app:iconTint="@null"
-            android:text="Pix"
-            android:textSize="16sp" />
+    <Button
+        android:id="@+id/btn_boleto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Boleto Bancário"
+        android:background="@drawable/outlined_button"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="24dp" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/btn_boleto"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:icon="@drawable/ic_boleto"
-            app:iconGravity="textStart"
-            app:iconPadding="8dp"
-            app:iconTint="@null"
-            android:text="Boleto"
-            android:textSize="16sp" />
+    <!-- Botão de confirmar -->
+    <Button
+        android:id="@+id/btn_confirmar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmar Pagamento"
+        android:background="@drawable/filled_button"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="24dp" />
 
-    </com.google.android.material.button.MaterialButtonToggleGroup>
+    <!-- Ícone da tenda -->
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/tenda_de_circo" />
 
 </LinearLayout>
