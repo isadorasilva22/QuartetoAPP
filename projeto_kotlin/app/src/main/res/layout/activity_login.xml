@@ -19,7 +19,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Nome: Bia -->
+    <!-- Beatriz -->
     <EditText
         android:id="@+id/bia"
         android:layout_width="0dp"
@@ -40,10 +40,10 @@
         android:textSize="16sp"
         android:textColor="#000000"
         android:background="#80FFFFFF"
-        app:layout_constraintStart_toEndOf="@id/bia"
-        app:layout_constraintBaseline_toBaselineOf="@id/bia"/>
+        app:layout_constraintTop_toBottomOf="@id/bia"
+        app:layout_constraintStart_toStartOf="parent"/>
 
-    <!-- Nome: Gi -->
+    <!-- Giovanna -->
     <EditText
         android:id="@+id/gi"
         android:layout_width="0dp"
@@ -52,7 +52,7 @@
         android:inputType="text"
         android:text="Giovanna Petrilli Venditti"
         android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@id/bia"
+        app:layout_constraintTop_toBottomOf="@id/biaRA"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
@@ -64,10 +64,10 @@
         android:textSize="16sp"
         android:textColor="#000000"
         android:background="#80FFFFFF"
-        app:layout_constraintStart_toEndOf="@id/gi"
-        app:layout_constraintBaseline_toBaselineOf="@id/gi"/>
+        app:layout_constraintTop_toBottomOf="@id/gi"
+        app:layout_constraintStart_toStartOf="parent"/>
 
-    <!-- Nome: Isa -->
+    <!-- Isadora -->
     <EditText
         android:id="@+id/isa"
         android:layout_width="0dp"
@@ -76,7 +76,7 @@
         android:inputType="text"
         android:text="Isadora Cristyne de Lima Silva"
         android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@id/gi"
+        app:layout_constraintTop_toBottomOf="@id/giRA"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
@@ -88,10 +88,10 @@
         android:textSize="16sp"
         android:textColor="#000000"
         android:background="#80FFFFFF"
-        app:layout_constraintStart_toEndOf="@id/isa"
-        app:layout_constraintBaseline_toBaselineOf="@id/isa"/>
+        app:layout_constraintTop_toBottomOf="@id/isa"
+        app:layout_constraintStart_toStartOf="parent"/>
 
-    <!-- Nome: Vini -->
+    <!-- Vinicios -->
     <EditText
         android:id="@+id/vini"
         android:layout_width="0dp"
@@ -100,7 +100,7 @@
         android:inputType="text"
         android:text="Vinicios de Lima Basteiro"
         android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@id/isa"
+        app:layout_constraintTop_toBottomOf="@id/isaRA"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
@@ -112,8 +112,8 @@
         android:textSize="16sp"
         android:textColor="#000000"
         android:background="#80FFFFFF"
-        app:layout_constraintStart_toEndOf="@id/vini"
-        app:layout_constraintBaseline_toBaselineOf="@id/vini"/>
+        app:layout_constraintTop_toBottomOf="@id/vini"
+        app:layout_constraintStart_toStartOf="parent"/>
 
     <!-- Obrigado -->
     <TextView
@@ -128,7 +128,7 @@
         android:background="@drawable/bg_textview_rounded"
         android:padding="12dp"
         android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@id/vini"
+        app:layout_constraintTop_toBottomOf="@id/viniRA"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
