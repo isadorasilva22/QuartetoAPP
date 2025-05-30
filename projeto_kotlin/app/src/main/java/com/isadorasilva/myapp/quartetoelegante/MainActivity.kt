@@ -1,4 +1,4 @@
-package com.isadorasilva.quartetoelegante
+package com.isadorasilva.myapp.quartetoelegante
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,12 +10,12 @@ import androidx.appcompat.app.AppCompatActivity
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.seu_layout_xml) // Substitua pelo nome real do seu XML
+        setContentView(R.layout.activity_main)
 
         // Botão "Ver Mais"
         val verMaisButton = findViewById<Button>(R.id.tickets_button)
         verMaisButton.setOnClickListener {
-            val intent = Intent(this, ActivityDatas::class.java)
+            val intent = Intent(this, DatasActivity::class.java)
             startActivity(intent)
         }
 
@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         val elefanteButton = findViewById<ImageButton>(R.id.elefanteButton)
         val focaButton = findViewById<ImageButton>(R.id.focaButton)
 
-        val irParaPagamento = Intent(this, ActivityPagamento::class.java)
+        val irParaPagamento = Intent(this, PagamentoActivity::class.java)
 
         lionButton.setOnClickListener { startActivity(irParaPagamento) }
         elefanteButton.setOnClickListener { startActivity(irParaPagamento) }
