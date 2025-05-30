@@ -2,6 +2,7 @@ package com.isadorasilva.myapp.quartetoelegante
 
 import android.content.ClipData
 import android.content.ClipboardManager
+import android.content.Intent // <-- Import necessário
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -18,7 +19,7 @@ class PixActivity : AppCompatActivity() {
 
         val tvPixCode = findViewById<TextView>(R.id.tvPixCode)
         val btnCopiarPix = findViewById<Button>(R.id.btn_copy_pix)
-        val btnVoltar = findViewById<Button>(R.id.btn_confirmar_pagamento)
+        val btnConfirmarPagamento = findViewById<Button>(R.id.btn_confirmar_pagamento)
 
         // Setar o código Pix na TextView
         tvPixCode.text = codigoPix
@@ -31,9 +32,11 @@ class PixActivity : AppCompatActivity() {
             Toast.makeText(this, "Código Pix copiado", Toast.LENGTH_SHORT).show()
         }
 
-        // Botão voltar finaliza a activity
-        btnVoltar.setOnClickListener {
-            finish()
+        // Botão "Confirmar Pagamento" leva para a LoginActivity
+        btnConfirmarPagamento.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+            finish() // Opcional: encerra a tela atual
         }
     }
 }
