@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FB8660"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título -->
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="128dp"
+            android:layout_height="175dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="120dp"
+            android:src="@drawable/macaco_foca_urso" />
+
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="Insira os dados do cartão"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Nome completo -->
+        <EditText
+            android:id="@+id/etFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext_background"
+            android:drawableEnd="@drawable/ic_person"
+            android:hint="NÚMERO DO CARTÃO"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textSize="12sp" />
+
+        <!-- E-mail -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext_background"
+            android:drawableEnd="@drawable/ic_email"
+            android:hint="VALIDADE"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textSize="12sp"/>
+
+        <!-- Senha -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext_background"
+            android:drawableEnd="@drawable/ic_lock"
+            android:hint="CVV"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textSize="12sp"/>
+
+        <!-- Confirmar senha -->
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/edittext_background"
+            android:drawableEnd="@drawable/ic_lock"
+            android:hint="NOME NO CARTÃO"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textSize="12sp"/>
+
+        <!-- Botão cadastrar -->
+        <Button
+            android:id="@+id/btn_confirmar_pagamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_textview_rounded"
+            android:padding="12dp"
+            android:gravity="center"
+            android:text="CONFIRMAR PAGAMENTO"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"/>
+    </LinearLayout>
+</ScrollView>
