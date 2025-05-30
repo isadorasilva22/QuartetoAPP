@@ -3,6 +3,7 @@ package com.isadorasilva.myapp.quartetoelegante
 import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -14,6 +15,9 @@ class BoletoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_boleto)
+
+        // Oculta o botão de voltar da barra superior
+        supportActionBar?.setDisplayHomeAsUpEnabled(false)
 
         val tvBoletoCode = findViewById<TextView>(R.id.tvBoletoCode)
         val btnCopyBoleto = findViewById<Button>(R.id.btn_copy_boleto)
@@ -28,7 +32,10 @@ class BoletoActivity : AppCompatActivity() {
         }
 
         btnConfirmar.setOnClickListener {
-            finish() // volta para a tela anterior
+            Toast.makeText(this, "Pagamento confirmado!", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 }
