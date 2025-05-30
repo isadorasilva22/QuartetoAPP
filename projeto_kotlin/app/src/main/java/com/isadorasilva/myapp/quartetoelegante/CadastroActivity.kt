@@ -1,4 +1,4 @@
-package com.isadorasilva.quartetoelegante
+package com.isadorasilva.myapp.quartetoelegante
 
 import android.content.Intent
 import android.os.Bundle
@@ -12,7 +12,7 @@ class CadastroActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_register)
+        setContentView(R.layout.activity_cadastro)
 
         val fullName = findViewById<EditText>(R.id.etFullName)
         val email = findViewById<EditText>(R.id.etEmail)
