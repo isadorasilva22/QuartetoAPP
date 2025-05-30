@@ -1,198 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#E28F74"
     android:padding="16dp">
 
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="205dp"
-        android:layout_height="45dp"
-        android:fontFamily="sans-serif-smallcaps"
-        android:text="R. Uriel Gaspar, 149 - Belenzinho, São Paulo"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="575dp" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="97dp"
-        android:layout_height="24dp"
-        android:fontFamily="sans-serif-smallcaps"
-        android:text="24/05/2025"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="511dp" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="205dp"
-        android:layout_height="26dp"
-        android:fontFamily="sans-serif-smallcaps"
-        android:text="Patati Patatá Circo Show"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="542dp" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="205dp"
-        android:layout_height="45dp"
-        android:fontFamily="sans-serif-smallcaps"
-        android:text="R. Uriel Gaspar, 149 - Belenzinho, São Paulo"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="445dp" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="97dp"
-        android:layout_height="24dp"
-        android:fontFamily="sans-serif-smallcaps"
-        android:text="17/05/2025"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="381dp" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="205dp"
-        android:layout_height="26dp"
-        android:fontFamily="sans-serif-smallcaps"
-        android:text="Patati Patatá Circo Show"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="412dp" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="205dp"
-        android:layout_height="45dp"
-        android:fontFamily="sans-serif-smallcaps"
-        android:text="R. Uriel Gaspar, 149 - Belenzinho, São Paulo"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="319dp" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="205dp"
-        android:layout_height="26dp"
-        android:fontFamily="sans-serif-smallcaps"
-        android:text="Patati Patatá Circo Show"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="286dp" />
-
-    <View
-        android:id="@+id/divider2"
-        android:layout_width="409dp"
-        android:layout_height="1dp"
-        android:background="?android:attr/listDivider"
-        tools:layout_editor_absoluteX="-14dp"
-        tools:layout_editor_absoluteY="499dp" />
-
     <ImageView
         android:id="@+id/logo"
         android:layout_width="128dp"
         android:layout_height="175dp"
-        android:layout_marginStart="-6dp"
-        android:layout_marginTop="8dp"
         android:src="@drawable/logo_circo_app"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/tickets_button"
-        android:layout_width="166dp"
-        android:layout_height="43dp"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="#D93E0D"
-        android:text="Ver Mais"
-        android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="282dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="18dp"
-        android:fontFamily="serif"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:text="Circo Quarteto Elegante"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.323"
-        app:layout_constraintStart_toEndOf="@+id/logo"
-        tools:layout_editor_absoluteY="74dp" />
+        android:textSize="18sp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@id/logo"
+        app:layout_constraintStart_toEndOf="@id/logo"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/welcome"
-        android:layout_width="236dp"
-        android:layout_height="30dp"
-        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:text="Bem vindo ao nosso aplicativo!"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="120dp" />
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/apresentacoes"
-        android:layout_width="392dp"
-        android:layout_height="47dp"
-        android:fontFamily="sans-serif-condensed-light"
-        android:maxLines="4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:text="Confira nossas próximas apresentações:"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="192dp" />
+        android:fontFamily="sans-serif-condensed-light"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
 
+    <!-- Primeira apresentação -->
     <ImageButton
         android:id="@+id/lionButton"
         android:layout_width="134dp"
         android:layout_height="113dp"
         android:scaleType="centerCrop"
-        app:srcCompat="@drawable/logo_circo_app"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="255dp"
-        tools:srcCompat="@drawable/lion" />
+        android:src="@drawable/lion"
+        app:layout_constraintTop_toBottomOf="@id/apresentacoes"
+        app:layout_constraintStart_toStartOf="parent" />
 
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Patati Patatá Circo Show"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-smallcaps"
+        app:layout_constraintStart_toEndOf="@id/lionButton"
+        app:layout_constraintTop_toTopOf="@id/lionButton"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10/05/2025"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-smallcaps"
+        app:layout_constraintStart_toStartOf="@id/textView7"
+        app:layout_constraintTop_toBottomOf="@id/textView7" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="R. Uriel Gaspar, 149 - Belenzinho, São Paulo"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-smallcaps"
+        app:layout_constraintStart_toStartOf="@id/textView4"
+        app:layout_constraintTop_toBottomOf="@id/textView4"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Divider -->
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@id/textView8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Segunda apresentação -->
     <ImageButton
         android:id="@+id/elefanteButton"
         android:layout_width="134dp"
         android:layout_height="113dp"
         android:scaleType="centerCrop"
-        app:srcCompat="@drawable/logo_circo_app"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="378dp"
-        tools:srcCompat="@drawable/elefante" />
+        android:src="@drawable/elefante"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        app:layout_constraintStart_toStartOf="parent" />
 
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Patati Patatá Circo Show"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-smallcaps"
+        app:layout_constraintTop_toTopOf="@id/elefanteButton"
+        app:layout_constraintStart_toEndOf="@id/elefanteButton"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="17/05/2025"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-smallcaps"
+        app:layout_constraintTop_toBottomOf="@id/textView11"
+        app:layout_constraintStart_toStartOf="@id/textView11" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="R. Uriel Gaspar, 149 - Belenzinho, São Paulo"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-smallcaps"
+        app:layout_constraintTop_toBottomOf="@id/textView9"
+        app:layout_constraintStart_toStartOf="@id/textView9"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Divider 2 -->
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintTop_toBottomOf="@id/textView10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Terceira apresentação -->
     <ImageButton
         android:id="@+id/focaButton"
         android:layout_width="134dp"
         android:layout_height="113dp"
         android:scaleType="centerCrop"
-        app:srcCompat="@drawable/logo_circo_app"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="507dp"
-        tools:srcCompat="@drawable/foca" />
-
-    <View
-        android:id="@+id/divider"
-        android:layout_width="409dp"
-        android:layout_height="1dp"
-        android:background="?android:attr/listDivider"
-        tools:layout_editor_absoluteX="-13dp"
-        tools:layout_editor_absoluteY="374dp" />
+        android:src="@drawable/foca"
+        app:layout_constraintTop_toBottomOf="@id/divider2"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="97dp"
-        android:layout_height="24dp"
+        android:id="@+id/textView13"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Patati Patatá Circo Show"
+        android:textSize="18sp"
         android:fontFamily="sans-serif-smallcaps"
-        android:text="10/05/2025"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="255dp" />
+        app:layout_constraintTop_toTopOf="@id/focaButton"
+        app:layout_constraintStart_toEndOf="@id/focaButton"
+        app:layout_constraintEnd_toEndOf="parent" />
 
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24/05/2025"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-smallcaps"
+        app:layout_constraintTop_toBottomOf="@id/textView13"
+        app:layout_constraintStart_toStartOf="@id/textView13" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="R. Uriel Gaspar, 149 - Belenzinho, São Paulo"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-smallcaps"
+        app:layout_constraintTop_toBottomOf="@id/textView14"
+        app:layout_constraintStart_toStartOf="@id/textView14"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Botão -->
+    <Button
+        android:id="@+id/tickets_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver Mais"
+        android:background="@drawable/bg_textview_rounded"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/textView12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
