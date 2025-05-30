@@ -5,12 +5,13 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 
 class CartaoActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.layout_cartao) 
+        setContentView(R.layout.layout_cartao) // ajuste o nome do XML se necessário
 
         val etNumeroCartao = findViewById<EditText>(R.id.etFullName)      // Número do cartão
         val etValidade = findViewById<EditText>(R.id.etEmail)             // Validade
@@ -29,6 +30,12 @@ class CartaoActivity : AppCompatActivity() {
                 Toast.makeText(this, "Por favor, preencha todos os campos", Toast.LENGTH_SHORT).show()
             } else {
                 Toast.makeText(this, "Pagamento confirmado para o cartão: $numeroCartao", Toast.LENGTH_LONG).show()
+
+                // Redirecionar para LoginActivity
+                val intent = Intent(this, LoginActivity::class.java)
+                startActivity(intent)
+
+                // Finaliza a activity atual para não permitir retorno com botão "voltar"
                 finish()
             }
         }
