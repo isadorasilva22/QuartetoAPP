@@ -2,7 +2,7 @@ package com.isadorasilva.myapp.quartetoelegante
 
 import android.content.ClipData
 import android.content.ClipboardManager
-import android.content.Intent // <-- Import necessário
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -34,6 +34,7 @@ class PixActivity : AppCompatActivity() {
 
         // Botão "Confirmar Pagamento" leva para a LoginActivity
         btnConfirmarPagamento.setOnClickListener {
+            Toast.makeText(this, "Pagamento confirmado!", Toast.LENGTH_SHORT).show()
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish() // Opcional: encerra a tela atual
