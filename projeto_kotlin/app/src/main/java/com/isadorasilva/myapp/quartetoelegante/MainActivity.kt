@@ -12,13 +12,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Botão "Ver Mais"
-        val verMaisButton = findViewById<Button>(R.id.tickets_button)
-        verMaisButton.setOnClickListener {
-            val intent = Intent(this, DatasActivity::class.java)
-            startActivity(intent)
-        }
-
         // Botões de animais (todos levam à tela de pagamento)
         val lionButton = findViewById<ImageButton>(R.id.lionButton)
         val elefanteButton = findViewById<ImageButton>(R.id.elefanteButton)
