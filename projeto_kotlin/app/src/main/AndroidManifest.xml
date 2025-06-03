@@ -13,7 +13,7 @@
 
         <!-- Activity principal com o launcher -->
         <activity
-            android:name=".CadastroActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,7 +23,7 @@
 
         <!-- Outras atividades -->
         <activity android:name=".LoginActivity" android:exported="true" />
-        <activity android:name=".MainActivity" android:exported="true" />
+        <activity android:name=".CadastroActivity" android:exported="true" />
         <activity android:name=".PagamentoActivity" android:exported="true" />
         <activity android:name=".CartaoActivity" android:exported="true" />
         <activity android:name=".PixActivity" android:exported="true" />
