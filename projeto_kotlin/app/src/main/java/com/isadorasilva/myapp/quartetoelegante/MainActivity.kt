@@ -12,15 +12,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Botões de animais (todos levam à tela de pagamento)
         val lionButton = findViewById<ImageButton>(R.id.lionButton)
         val elefanteButton = findViewById<ImageButton>(R.id.elefanteButton)
         val focaButton = findViewById<ImageButton>(R.id.focaButton)
 
-        val irParaPagamento = Intent(this, PagamentoActivity::class.java)
+        val irParaCadastro = Intent(this, CadastroActivity::class.java)
 
-        lionButton.setOnClickListener { startActivity(irParaPagamento) }
-        elefanteButton.setOnClickListener { startActivity(irParaPagamento) }
-        focaButton.setOnClickListener { startActivity(irParaPagamento) }
+        lionButton.setOnClickListener { startActivity(irParaCadastro) }
+        elefanteButton.setOnClickListener { startActivity(irParaCadastro) }
+        focaButton.setOnClickListener { startActivity(irParaCadastro) }
     }
 }
