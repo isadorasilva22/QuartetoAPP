@@ -23,7 +23,6 @@
 
         <!-- Outras atividades -->
         <activity android:name=".LoginActivity" android:exported="true" />
-        <activity android:name=".DatasActivity" android:exported="true" />
         <activity android:name=".MainActivity" android:exported="true" />
         <activity android:name=".PagamentoActivity" android:exported="true" />
         <activity android:name=".CartaoActivity" android:exported="true" />
