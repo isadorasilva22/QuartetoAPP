@@ -42,7 +42,7 @@ class CadastroActivity : AppCompatActivity() {
                 }
                 else -> {
                     // Tudo certo, vai para a MainActivity
-                    val intent = Intent(this, MainActivity::class.java)
+                    val intent = Intent(this, PagamentoActivity::class.java)
                     startActivity(intent)
                     finish()
                 }
