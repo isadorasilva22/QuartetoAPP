@@ -55,7 +55,7 @@
 
     <!-- Botão de confirmar -->
     <Button
-        android:id="@+id/btn_confirmar"
+        android:id="@+id/btn_cancelar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Cancelar"
