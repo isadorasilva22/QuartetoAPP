@@ -58,7 +58,7 @@
         android:id="@+id/btn_confirmar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Confirmar Pagamento"
+        android:text="Cancelar"
         android:background="@drawable/filled_button"
         android:textColor="@android:color/white"
         android:layout_marginBottom="24dp" />
