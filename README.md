@@ -5,3 +5,10 @@ Este aplicativo foi criado para o projeto final da disciplina de Desenvolvimento
 # Circo Quarteto Elegante
 
 Nosso aplicativo foi criado com o objetivo de auxiliar na venda de ingressos de um circo.
+
+# Equipe Quarteto Elegante
+
+Beatriz Bramont Oliveira | RA: 2402004
+Giovanna Petrilli Venditti | RA: 2401830
+Isadora Cristyne de Lima Silva | RA: 2401838
+Vinicios de Lima Basteiro | RA: 2402096
