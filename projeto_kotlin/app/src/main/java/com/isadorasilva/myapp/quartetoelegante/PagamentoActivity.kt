@@ -29,5 +29,14 @@ class PagamentoActivity : AppCompatActivity() {
             val intent = Intent(this, BoletoActivity::class.java)
             startActivity(intent)
         }
+
+        val btnCancelar = findViewById<Button>(R.id.btn_cancelar)
+
+        btnCancelar.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
     }
 }
